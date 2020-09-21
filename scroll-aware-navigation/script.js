@@ -1,6 +1,4 @@
-function selectElementByClass(className) {
-    return document.querySelector(`.${className}`);
-  }
+const selectElementByClass = className => document.querySelector(`.${className}`);
   
   const sections = [
     selectElementByClass('home'),
