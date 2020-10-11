@@ -1,4 +1,5 @@
-### Custom email signature with links on social and contact medias
+## Custom email signature with links on social and contact medias
+
 ![final result](https://github.com/allanShady/Javacript-playground/blob/master/custom-signature-4-emails/assets/images/final-result.PNG)
 
 I get the inspiration from [this post](https://academind.com/learn/css/build-a-custom-email-signature/) from [academind](https://academind.com/)
@@ -11,10 +12,10 @@ To dos
 - [x] Rename the icons properly 
 - [x] Make them globally accessible by hosting on your preferred CDN. I do recommend [firebase](https://console.firebase.google.com/)
 - [x] Design the signature using html tags. if you like you can just use the tags listed bellow:
-    * ```html <table> ```
-    * ```html <tbody> ```
-    * ```html <tr> ```
-    * ```html <td> ```
+    * ``` <table> ```
+    * ``` <tbody> ```
+    * ``` <tr> ```
+    * ``` <td> ```
 - [x] Preview the html page
 - [x] Select all content using left button mouse
 - [x] Go to your email
@@ -23,4 +24,4 @@ To dos
     * Set the new signature to used while creating or replying a new email
 - [x] Create a new email to test!
 
-## Thank you! 😊🙏🏿💪
+### Thank you! 😊🙏🏿💪
