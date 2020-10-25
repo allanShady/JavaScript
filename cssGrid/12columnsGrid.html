@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 columns grid</title>
+
+    <style>
+        body {
+            color: #fff;
+            font-family: 'Nunito Semibold';
+            text-align: center;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 10px;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            grid-column: 1 / 13;
+        }
+
+        main {
+            grid-column: 4 / 13;
+            grid-row: 2 / 4;
+        }
+
+        aside {
+            grid-column: 1 / 4;
+        }
+
+        section {
+            grid-column: 1 / 13;
+            grid-row: 4 / 6;
+        }
+
+        nav {
+            grid-column: 1 / 4;
+        }
+
+        footer {
+            grid-column: 1 / 13;
+            grid-row: 6 / 7
+        }
+
+        #container > *{
+            background: crimson;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>Header</header>
+        <main>Main</main>
+        <section>Section</section>
+        <aside>Aside</aside>
+        <nav>Nav</nav>
+        <footer>Footer</footer>
+    </div>    
+</body>
+</html>
