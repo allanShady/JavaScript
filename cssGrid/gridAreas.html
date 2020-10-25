@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid areas</title>
+
+    <style>
+        body {
+            color: #fff;
+            font-family: 'Nunito Semibold';
+            text-align: center;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 10px;
+            max-width: 80%;
+            margin: 0 auto;
+            grid-template-areas: 
+            "header header header header"
+            "aside aside main main"
+            "nav nav main main"
+            "section section section section"
+            "footer footer footer footer";
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        #container > *{
+            background: crimson;
+            padding: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">        
+        <header>Header</header>
+        <main>Main</main>
+        <section>Section</section>
+        <aside>Aside</aside>
+        <nav>Nav</nav>
+        <footer>Footer</footer>
+    </div>    
+</body>
+</html>
