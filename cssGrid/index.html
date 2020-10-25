@@ -21,6 +21,8 @@
                 max-width: 960px;
                 margin: 0 auto;
                 margin-bottom: 50px;
+                /*align-items: start; /*align-items is for top to bottom*/ 
+                /*justify-items: end; /*justify-items is for left to right*/
             }
             #container div {
                 background: #3bbced;
@@ -50,6 +52,21 @@
 
             #container2 div:nth-child(even) {
                 background: #777b;
+            }
+
+            .one-1 {
+                align-self: end;
+                justify-self: center;
+            }
+
+            .two-2 {
+                align-self: center;
+                justify-self: center;
+            }
+
+            .three-3 {
+                align-self: start;
+                justify-self: center;
             }
 
             .one {
@@ -95,9 +112,9 @@
 
     <body>
         <div id="container">
-            <div>1</div> 
-            <div>2</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis temporibus repellendus nihil repudiandae consequatur rem, numquam vel quo saepe labore vero eum sapiente tenetur! Quidem ad fugit veritatis nesciunt ab.</div>
+            <div class="one-1">1</div> 
+            <div class="two-2">2</div>
+            <div class="three-3">3</div>
             <div>4</div>
             <div>5</div>
             <div>6</div>
