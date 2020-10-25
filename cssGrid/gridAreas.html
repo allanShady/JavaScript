@@ -22,10 +22,29 @@
             margin: 0 auto;
             grid-template-areas: 
             "header header header header"
-            "aside aside main main"
-            "nav nav main main"
+            "footer footer footer footer"
+            "main main main main"
+            "main main main main"
+            "aside aside nav nav"
             "section section section section"
-            "footer footer footer footer";
+            "section section section section";
+        }
+
+        @media screen and (min-width: 760px) {
+            #container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-rows: minmax(100px, auto);
+                grid-gap: 10px;
+                max-width: 80%;
+                margin: 0 auto;
+                grid-template-areas: 
+                "header header header header"
+                "aside aside main main"
+                "nav nav main main"
+                "section section section section"
+                "footer footer footer footer";
+            }
         }
 
         header {
